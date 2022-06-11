@@ -17,7 +17,7 @@ class Modelo(models.Model):
         verbose_name_plural = "Modelos"
 
     def __str__(self):
-        return str(self.nome)
+        return "%s - %s - %s" % (self.nome, self.edicao, self.autor)
 
 
 class Livro(models.Model):
